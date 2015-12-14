@@ -25,9 +25,14 @@ function walk(node) {
 }
 
 function handleText(textNode) {
+    var my = new Regexp(/\bmy|My\b/);
+    var mine = new Regexp(/\bmine|Mine\b/);
+    var me = new Regexp(/\bme|Me\b/);
+    var I = new Regexp(/\bI\b/);
+
     var v = textNode.nodeValue;
-    var possessives = ["My", "my", "Mine", "mine"];
-    var pronouns = ["I", "me", "Me"];
+    var possessives = [my, mine];
+    var pronouns = [me, I];
 
     possessives.forEach(function (possessive) {
         v = v.replace(possessive, "Greg's");
