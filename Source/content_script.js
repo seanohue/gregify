@@ -25,10 +25,15 @@ function walk(node) {
 }
 
 function handleText(textNode) {
-    var my = new Regexp(/\bmy|My\b/);
-    var mine = new Regexp(/\bmine|Mine\b/);
-    var me = new Regexp(/\bme|Me\b/);
-    var I = new Regexp(/\bI\b/);
+
+    var my = new RegExp(
+        /\bmy\b|\bMy\b/g);
+    var mine = new RegExp(
+        /\bmine\b|\bMine\b/g);
+    var me = new RegExp(
+        /\bme\b|\bMe\b/g);
+    var I = new RegExp(
+        /\bI\b/g);
 
     var v = textNode.nodeValue;
     var possessives = [my, mine];
