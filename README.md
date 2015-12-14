@@ -11,7 +11,7 @@ Chrome extension that replaces occurrences of 'my/me/mine/I' with 'Greg'
 Screenshot:
 -----------
 
-![lulz](screen.png)
+![lulz](screen2.png)
 
 Installation
 ------------
