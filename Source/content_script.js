@@ -30,7 +30,7 @@ function handleText(textNode) {
     var pronouns = ["I", "me", "Me"];
 
     possessives.forEach(function (possessive) {
-        v = v.replace(possessive, "Greg's")
+        v = v.replace(possessive, "Greg's");
     });
     pronouns.forEach(function (pronoun) {
         v = v.replace(pronoun, "Greg");
